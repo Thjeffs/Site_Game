@@ -102,7 +102,7 @@ nav ul button:hover {
   max-width: 1000px;
   min-width: 300px;
   height: 450px;
-  background: linear-gradient(#0454D9,#AC04D9);
+  background: linear-gradient(#AC04D9,#0454D9);
   border-radius: 8px;
   box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -151,7 +151,7 @@ section .catalog {
 section .filter-card {
   width: 980px;
   height: 150px;
-  background: linear-gradient(#0454D9,#AC04D9);
+  background: linear-gradient(#AC04D9,#0454D9);
   border-radius: 8px;
   margin: 0 auto;
   display: flex;
@@ -174,7 +174,7 @@ section .filter-card {
   height: 50px;
   border-radius: 50px;
   border: none;
-  background: #1859EB;
+  background: #AC04D9;
   color: white;
   cursor: pointer;
   font-size: 1.1em;
@@ -189,6 +189,9 @@ section .filter-card {
 .title-wrapper-catalog {
   margin-top: 200px;
   padding-bottom: 20px;
+  color:black;
+  font-size:20px;
+  font-family:'helvetica';
 }
 
 section .card-wrapper {
@@ -198,16 +201,18 @@ section .card-wrapper {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-gap: 30px;
   padding-top: 50px;
+  
 }
 
 section .card-item {
   height: 500px;
-  background:linear-gradient(#AC04D9,#0454D9);
+  background:linear-gradient(#0454D9,#AC04D9);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .card-content {
@@ -216,6 +221,7 @@ section .card-item {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  color:white;
 }
 
 .card-item img {
@@ -229,7 +235,7 @@ section .card-item {
 .card-item p {
   width: 90%;
   font-style: italic;
-  color: #00000070;
+  color:white;
 }
 
 .card-item button {
