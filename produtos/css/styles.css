@@ -24,7 +24,7 @@ body {
 header {
   width: 100%;
   height: 400px;
-  background:linear-gradient(#225BEB,#9E02D6);
+  background: var(--orange);
 }
 
 .content {
@@ -34,7 +34,6 @@ header {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  
 }
 
 nav {
@@ -44,57 +43,48 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .brand {
-  font-size: 30px;
-  color: white;
+  font-size: 24px;
+  color: var(--blue);
   cursor: pointer;
-  font-family:'helvetica';
-  
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  
-  
 }
 
 nav ul li {
   list-style: none;
   padding: 10px;
   cursor: pointer;
- 
 }
 
 nav ul li a {
-  color: white;
+  color: var(--blue);
   text-decoration: none;
-  font-family:'helvetica';
-  font-size:20px;
 }
 
 nav ul li a:hover {
-  color: white;
+  color: #00285f83;
 }
 
 nav ul button {
-  border: 1px solid blue;
-  background: #9E02D6;
+  border: 1px solid var(--blue);
+  background: transparent;
   padding: 8px 40px;
   cursor: pointer;
   margin-left: 30px;
-  color: white;
+  color: var(--blue);
   font-weight: bold;
-  border-radius: 50px;
-  font-size:20px;
+  border-radius: 4px;
 }
 
 nav ul button:hover {
   transition: background, color 0.6s;
-  background: #AC04D9;
+  background: var(--blue);
   color: white;
 }
 
@@ -102,7 +92,7 @@ nav ul button:hover {
   max-width: 1000px;
   min-width: 300px;
   height: 450px;
-  background: linear-gradient(#AC04D9,#0454D9);
+  background: var(--blue);
   border-radius: 8px;
   box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -151,7 +141,7 @@ section .catalog {
 section .filter-card {
   width: 980px;
   height: 150px;
-  background: linear-gradient(#AC04D9,#0454D9);
+  background: var(--gray);
   border-radius: 8px;
   margin: 0 auto;
   display: flex;
@@ -164,18 +154,16 @@ section .filter-card {
   width: 700px;
   height: 50px;
   border: none;
-  border-radius: 50px;
+  border-radius: 4px 0px 0px 4px;
   text-indent: 10px;
-  font-size:20px;
-  
 }
 
 .search-button {
   width: 150px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 0px 4px 4px 0px;
   border: none;
-  background: #AC04D9;
+  background: var(--blue);
   color: white;
   cursor: pointer;
   font-size: 1.1em;
@@ -190,9 +178,6 @@ section .filter-card {
 .title-wrapper-catalog {
   margin-top: 200px;
   padding-bottom: 20px;
-  color:black;
-  font-size:20px;
-  font-family:'helvetica';
 }
 
 section .card-wrapper {
@@ -202,18 +187,16 @@ section .card-wrapper {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-gap: 30px;
   padding-top: 50px;
-  
 }
 
 section .card-item {
   height: 500px;
-  background:linear-gradient(#0454D9,#AC04D9);
+  background: var(--gray);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  
 }
 
 .card-content {
@@ -222,7 +205,6 @@ section .card-item {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color:white;
 }
 
 .card-item img {
@@ -236,7 +218,7 @@ section .card-item {
 .card-item p {
   width: 90%;
   font-style: italic;
-  color:white;
+  color: #00000070;
 }
 
 .card-item button {
@@ -269,11 +251,11 @@ section .card-item {
   padding: 50px 10px;
 }
 
-.about-content { 
+.about-content {
   max-width: 1000px;
   min-width: 300px;
   height: 600px;
-  background:linear-gradient(#AC04D9,#0454D9);
+  background: #dedede3b;
   margin: 0 auto;
   border-radius: 8px;
   z-index: 10;
@@ -300,14 +282,12 @@ section .card-item {
   align-items: flex-start;
   justify-content: flex-start;
   padding-top: 10%;
-  color:white;
 }
 
 .right h3 {
   text-align: right;
   width: 90%;
   margin-bottom: 20px;
-  
 }
 
 .right p {
@@ -315,8 +295,7 @@ section .card-item {
   font-size: 1em;
   letter-spacing: 2px;
   text-align: right;
-  color: white;
-  
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /* Features */
@@ -378,7 +357,7 @@ footer {
 footer .main {
   width: 100%;
   height: 200px;
-  background:linear-gradient(#225BEB,#9E02D6);
+  background: var(--orange);
   padding: 20px 10px;
 }
 
@@ -389,7 +368,6 @@ footer .main {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
-  
 }
 
 .footer-company,
@@ -397,8 +375,6 @@ footer .main {
 .footer-contact,
 .footer-social {
   color: white;
-  font-size:20px;
-  font-family:'helvetica';
   height: 100%;
   min-height: 100px;
 }
@@ -419,13 +395,11 @@ footer .main {
 footer .last {
   width: 100%;
   height: 50px;
-  background:#9E02D6;
+  background: var(--blue);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family:'helvetica';
-  font-size:20px;
 }
 
 /* Responsive adjustments */
@@ -516,8 +490,8 @@ footer .last {
   width: 90%;
   padding: 15px 0px;
   border: none;
-  background: #225BEB;
-  border-radius: 50px;
+  background: var(--blue);
+  border-radius: 4px;
   color: white;
   font-weight: bold;
   font-size: 1.1em;
@@ -529,9 +503,9 @@ footer .last {
 }
 .btn-link:hover{
   background: #dedede;
-  color: black;
+  color: var(--blue);
 }
-.foto{
-    height: 500px;
-    width: 300px;
+.testegif{
+  height: 430px;
+  width: 100px;
 }
