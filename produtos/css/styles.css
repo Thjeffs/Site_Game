@@ -530,7 +530,8 @@ footer .last {
 .btn-link:hover{
   background: #dedede;
   color: black;
-}.foto{
+}
+.foto{
     height: 500px;
     width: 300px;
 }
