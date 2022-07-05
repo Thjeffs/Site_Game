@@ -531,6 +531,10 @@ footer .last {
   background: #dedede;
   color: black;
 }
+.foto{
+    height: 500px;
+    width: 300px;
+}
 .testegif{
   height: 430px;
   width: 100px;
